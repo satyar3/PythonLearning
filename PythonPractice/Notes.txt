@@ -1,0 +1,26 @@
+# Command to generate the .pyc file:
+    python -m py_compile <file_name>.py
+
+# Command to run the compiled .pyc file
+    python <file_name>.py
+
+
+
+# Virtual env:
+    pip install virtualenv
+
+    1-> W/O site packages -> virtualenv <env_name>
+    2-> With site packages -> virtualenv --system-site-packages <env_name>
+
+    Activate virtual env:
+    go to script and activate file
+    type activate
+
+    Extract requirements.txt:
+    pip freeze > requirements.txt
+
+    run from requirement.txt :
+    virtualenv -r <path_of_requirement.txt_file>
+
+    to come out of virtual env:
+    deactivate
